@@ -25,17 +25,19 @@ final class HomeViewController: UIViewController {
 
     //MARK: - Private Methods
     private func registerCells() {
-        homeTableView.register(UINib(nibName: storiesTableViewCell, bundle: nil), forCellReuseIdentifier: storiesTableViewCell)
-        homeTableView.register(UINib(nibName: pictureTableViewCell, bundle: nil), forCellReuseIdentifier: pictureTableViewCell)
-        homeTableView.register(UINib(nibName: recommendTableViewCell, bundle: nil), forCellReuseIdentifier: recommendTableViewCell)
-        homeTableView.register(UINib(nibName: pictureTableViewCell, bundle: nil), forCellReuseIdentifier: pictureTableViewCell)
+        homeTableView.register(UINib(nibName: storiesTableViewCell, bundle: nil),
+                               forCellReuseIdentifier: storiesTableViewCell)
+        homeTableView.register(UINib(nibName: pictureTableViewCell, bundle: nil),
+                               forCellReuseIdentifier: pictureTableViewCell)
+        homeTableView.register(UINib(nibName: recommendTableViewCell, bundle: nil),
+                               forCellReuseIdentifier: recommendTableViewCell)
+        homeTableView.register(UINib(nibName: pictureTableViewCell, bundle: nil),
+                               forCellReuseIdentifier: pictureTableViewCell)
     }
-
-
 }
 
+//MARK: extension UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
@@ -43,16 +45,20 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: storiesTableViewCell) as? StoriesTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: storiesTableViewCell)
+                    as? StoriesTableViewCell else { return UITableViewCell() }
             return cell
         case 1:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: pictureTableViewCell) as? PictureTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: pictureTableViewCell)
+                    as? PictureTableViewCell else { return UITableViewCell() }
             return cell
         case 2:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: recommendTableViewCell) as? RecommendTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: recommendTableViewCell)
+                    as? RecommendTableViewCell else { return UITableViewCell() }
             return cell
         default:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: pictureTableViewCell) as? PictureTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: pictureTableViewCell)
+                    as? PictureTableViewCell else { return UITableViewCell() }
             return cell
         }
     }

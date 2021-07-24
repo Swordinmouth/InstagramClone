@@ -12,7 +12,6 @@
 		1A9788E426AB382A00043877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9788E226AB382A00043877 /* LaunchScreen.storyboard */; };
 		1A9788F026AB38C300043877 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9788EB26AB38C200043877 /* ProfileViewController.swift */; };
 		1A9788F126AB38C300043877 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9788EC26AB38C200043877 /* AddViewController.swift */; };
-		1A9788F226AB38C300043877 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9788ED26AB38C200043877 /* LikeViewController.swift */; };
 		1A9788F326AB38C300043877 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9788EE26AB38C200043877 /* HomeViewController.swift */; };
 		1A9788F426AB38C300043877 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9788EF26AB38C200043877 /* SearchViewController.swift */; };
 		1A9788FA26AB38EC00043877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9788F926AB38EC00043877 /* Main.storyboard */; };
@@ -23,6 +22,11 @@
 		1A97890E26AB3B8000043877 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97890826AB3B8000043877 /* PictureTableViewCell.swift */; };
 		1A97890F26AB3B8000043877 /* RecommendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A97890926AB3B8000043877 /* RecommendTableViewCell.xib */; };
 		1A97891126AB3BE800043877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A97891026AB3BE800043877 /* Assets.xcassets */; };
+		1A97891326AB5FD900043877 /* LikeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97891226AB5FD900043877 /* LikeTableViewController.swift */; };
+		1A97891526AB607800043877 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97891426AB607800043877 /* RequestTableViewCell.swift */; };
+		1A97891826AB6EA600043877 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97891726AB6EA600043877 /* TodayTableViewCell.swift */; };
+		1A97891A26AB6EB300043877 /* WeeklyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97891926AB6EB300043877 /* WeeklyTableViewCell.swift */; };
+		1A97891C26AB9C3700043877 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97891B26AB9C3700043877 /* Action.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +37,6 @@
 		1A9788E526AB382A00043877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A9788EB26AB38C200043877 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1A9788EC26AB38C200043877 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		1A9788ED26AB38C200043877 /* LikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		1A9788EE26AB38C200043877 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1A9788EF26AB38C200043877 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1A9788F926AB38EC00043877 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +47,11 @@
 		1A97890826AB3B8000043877 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
 		1A97890926AB3B8000043877 /* RecommendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendTableViewCell.xib; sourceTree = "<group>"; };
 		1A97891026AB3BE800043877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A97891226AB5FD900043877 /* LikeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTableViewController.swift; sourceTree = "<group>"; };
+		1A97891426AB607800043877 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		1A97891726AB6EA600043877 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
+		1A97891926AB6EB300043877 /* WeeklyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewCell.swift; sourceTree = "<group>"; };
+		1A97891B26AB9C3700043877 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,21 +88,33 @@
 				1A9788D926AB382400043877 /* SceneDelegate.swift */,
 				1A9788EC26AB38C200043877 /* AddViewController.swift */,
 				1A9788EE26AB38C200043877 /* HomeViewController.swift */,
-				1A9788ED26AB38C200043877 /* LikeViewController.swift */,
+				1A97891226AB5FD900043877 /* LikeTableViewController.swift */,
 				1A9788EB26AB38C200043877 /* ProfileViewController.swift */,
 				1A9788EF26AB38C200043877 /* SearchViewController.swift */,
 				1A9788F926AB38EC00043877 /* Main.storyboard */,
+				1A97891B26AB9C3700043877 /* Action.swift */,
+				1A97891426AB607800043877 /* RequestTableViewCell.swift */,
+				1A97891726AB6EA600043877 /* TodayTableViewCell.swift */,
+				1A97891926AB6EB300043877 /* WeeklyTableViewCell.swift */,
+				1A97891626AB6B7C00043877 /* Xib */,
+				1A97891026AB3BE800043877 /* Assets.xcassets */,
+				1A9788E226AB382A00043877 /* LaunchScreen.storyboard */,
+				1A9788E526AB382A00043877 /* Info.plist */,
+			);
+			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		1A97891626AB6B7C00043877 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
 				1A97890826AB3B8000043877 /* PictureTableViewCell.swift */,
 				1A97890726AB3B8000043877 /* PictureTableViewCell.xib */,
 				1A97890426AB3B7E00043877 /* RecommendTableViewCell.swift */,
 				1A97890926AB3B8000043877 /* RecommendTableViewCell.xib */,
 				1A97890626AB3B7F00043877 /* StoriesTableViewCell.swift */,
 				1A97890526AB3B7F00043877 /* StoriesTableViewCell.xib */,
-				1A97891026AB3BE800043877 /* Assets.xcassets */,
-				1A9788E226AB382A00043877 /* LaunchScreen.storyboard */,
-				1A9788E526AB382A00043877 /* Info.plist */,
 			);
-			path = InstagramClone;
+			path = Xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,15 +191,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A9788F126AB38C300043877 /* AddViewController.swift in Sources */,
+				1A97891326AB5FD900043877 /* LikeTableViewController.swift in Sources */,
 				1A9788F426AB38C300043877 /* SearchViewController.swift in Sources */,
 				1A97890C26AB3B8000043877 /* StoriesTableViewCell.swift in Sources */,
 				1A9788D826AB382400043877 /* AppDelegate.swift in Sources */,
+				1A97891526AB607800043877 /* RequestTableViewCell.swift in Sources */,
 				1A9788F026AB38C300043877 /* ProfileViewController.swift in Sources */,
+				1A97891826AB6EA600043877 /* TodayTableViewCell.swift in Sources */,
+				1A97891A26AB6EB300043877 /* WeeklyTableViewCell.swift in Sources */,
 				1A97890A26AB3B8000043877 /* RecommendTableViewCell.swift in Sources */,
 				1A9788DA26AB382400043877 /* SceneDelegate.swift in Sources */,
+				1A97891C26AB9C3700043877 /* Action.swift in Sources */,
 				1A9788F326AB38C300043877 /* HomeViewController.swift in Sources */,
 				1A97890E26AB3B8000043877 /* PictureTableViewCell.swift in Sources */,
-				1A9788F226AB38C300043877 /* LikeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
