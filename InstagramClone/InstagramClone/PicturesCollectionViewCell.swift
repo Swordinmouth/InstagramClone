@@ -10,16 +10,15 @@ import UIKit
 final class PicturesCollectionViewCell: UICollectionViewCell {
 
     //MARK: IBOutlet
-    @IBOutlet weak var picturesImageView: UIImageView!
+    @IBOutlet private var picturesImageView: UIImageView!
 
     // MARK: - Public Properties
     var photoItem: PhotoAlbum? {
         didSet {
-            if let image =  photoItem?.photoName {
+            guard let image =  photoItem?.photoName else { return }
                 picturesImageView.image = UIImage(named: image)
                 picturesImageView.contentMode = .scaleAspectFill
                 picturesImageView.clipsToBounds = true
-            }
         }
     }
 }

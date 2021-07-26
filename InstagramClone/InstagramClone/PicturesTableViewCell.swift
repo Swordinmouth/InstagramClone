@@ -10,7 +10,7 @@ import UIKit
 final class PicturesTableViewCell: UITableViewCell {
 
     //MARK:- IBotlet
-    @IBOutlet weak var picturesCollectionView: UICollectionView!
+    @IBOutlet private var picturesCollectionView: UICollectionView!
 
     // MARK: - Private Properties
     private var profilePictureCell = "picturesCollectionViewCell"
@@ -76,13 +76,11 @@ extension PicturesTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) ->
     UICollectionViewCell {
 
-        if let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: profilePictureCell, for: indexPath)
-            as? PicturesCollectionViewCell {
+        guard let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: profilePictureCell, for: indexPath)
+                as? PicturesCollectionViewCell else { return UICollectionViewCell() }
 
             itemCell.photoItem = photoPosts[indexPath.row]
             return itemCell
 
         }
-        return UICollectionViewCell()
-    }
 }

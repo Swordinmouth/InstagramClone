@@ -62,12 +62,10 @@ extension StorysTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
 
-        if let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: storeisPictureCell, for: indexPath)
-            as? StoriesCollectionViewCell {
+        guard let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier: storeisPictureCell, for: indexPath)
+                as? StoriesCollectionViewCell else { return UICollectionViewCell() }
 
             itemCell.storiesItem = groupHistories[indexPath.row]
             return itemCell
         }
-        return UICollectionViewCell()
-    }
 }

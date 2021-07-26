@@ -32,6 +32,7 @@ final class ProfileViewController: UIViewController {
     //MARK: - Private Methods
     private func setupRefresh() {
         refreshController.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+
         profileTableView.addSubview(refreshController)
     }
     @objc private func handleRefresh() {

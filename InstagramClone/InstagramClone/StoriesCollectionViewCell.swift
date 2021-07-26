@@ -10,16 +10,15 @@ import UIKit
 final class StoriesCollectionViewCell: UICollectionViewCell {
 
     //MARK: - IBoUtlet
-    @IBOutlet weak var storyImageLabel: UILabel!
-    @IBOutlet weak var storyImageView: UIImageView!
+    @IBOutlet private var storyImageLabel: UILabel!
+    @IBOutlet private var storyImageView: UIImageView!
 
     //MARK: - Public Properties
     var storiesItem: History? {
         didSet{
             storyImageLabel.text = storiesItem?.storiesName
-            if let image = storiesItem?.storiesImageName {
+            guard let image = storiesItem?.storiesImageName else { return }
                 storyImageView.image = UIImage(named: image)
-            }
         }
     }
 }

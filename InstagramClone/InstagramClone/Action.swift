@@ -10,14 +10,13 @@ import Foundation
 struct Post {
 
     // MARK: - Public Properties
-    var userName: String
-    var userImage: String
-    var commentToPost: String
-    var timeComment: String
-    var commentImage: String
-    var describeToUser: Int
+    let userName: String
+    let userImage: String
+    let commentToPost: String
+    let timeComment: String
+    let commentImage: String
+    let describeToUser: Int
 
-    // MARK: - Initializers
     init(userName: String,
          userImage: String,
          commentToPost: String,
